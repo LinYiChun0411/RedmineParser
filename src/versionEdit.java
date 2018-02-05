@@ -10,7 +10,7 @@ public class versionEdit {
 		for(String project : projectList){
 			
 			RedmineController redmineController2=new RedmineController();
-			redmineController2.loginRedmine("Yichun.Lin","Alanlin0411!");
+			redmineController2.loginRedmine("UserID","UserPassword");
 			redmineController2.setProjectName(project);
 			redmineController2.editVersion(fromVersion, toVersion);
 			redmineController2.editVersion("e"+fromVersion, "e"+toVersion);
